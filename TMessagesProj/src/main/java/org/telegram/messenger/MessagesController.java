@@ -19991,14 +19991,14 @@ public class MessagesController extends BaseController implements NotificationCe
         if (reasons.isEmpty()) {
             return null;
         }
-        for (int a = 0, N = reasons.size(); a < N; a++) {
+        /*for (int a = 0, N = reasons.size(); a < N; a++) {
             TLRPC.RestrictionReason reason = reasons.get(a);
             if (ignoreRestrictionReasons != null && ignoreRestrictionReasons.contains(reason.reason)) continue;
             if ("sensitive".equals(reason.reason)) continue;
             if ("all".equals(reason.platform) || !ApplicationLoader.isStandaloneBuild() && !BuildVars.isBetaApp() && "android".equals(reason.platform)) {
                 return reason.text;
             }
-        }
+        }*/
         return null;
     }
 
