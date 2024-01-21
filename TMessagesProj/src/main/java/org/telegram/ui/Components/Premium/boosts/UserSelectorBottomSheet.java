@@ -395,10 +395,10 @@ public class UserSelectorBottomSheet extends BottomSheetWithRecyclerListView imp
         updateList(false, true);
         fixNavigationBar();
         if (type == TYPE_PREMIUM) {
-            BoostRepository.loadGiftOptions(null, arg -> {
+            /*BoostRepository.loadGiftOptions(null, arg -> {
                 paymentOptions.clear();
                 paymentOptions.addAll(arg);
-            });
+            });*/
         }
     }
 
